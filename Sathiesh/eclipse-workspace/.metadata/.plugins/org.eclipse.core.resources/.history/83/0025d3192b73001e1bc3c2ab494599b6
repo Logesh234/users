@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author Sathish
+ *
+ */
+module JDBC {
+	requires java.sql;
+}

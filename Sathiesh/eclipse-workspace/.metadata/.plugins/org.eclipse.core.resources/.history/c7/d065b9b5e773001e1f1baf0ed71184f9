@@ -1,0 +1,19 @@
+package service;
+
+import java.util.List;
+
+import Model.User;
+
+public record UserDaoImplementation() {
+
+	public void insertUser(User u) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public List<User> viewUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

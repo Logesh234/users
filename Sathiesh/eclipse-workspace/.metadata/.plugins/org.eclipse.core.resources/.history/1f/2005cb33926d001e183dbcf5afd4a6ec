@@ -1,0 +1,14 @@
+package MiniProject1;
+
+public class Student {
+	private int ViewBook;
+	private int LendBook;
+	private int ReturnBook;
+	
+	public Student () {
+		super();
+	}
+	
+	
+
+}

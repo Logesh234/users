@@ -1,0 +1,16 @@
+package Collection;
+
+import Exception.LowQualityException;
+
+public class LowQualityException 
+{
+	   try
+	   {
+	   throw new lowQualityException ("Low Quality");
+	   }
+	   catch(lowQualityException e)
+	   {
+		   System.out.println(e);
+	   }
+
+}

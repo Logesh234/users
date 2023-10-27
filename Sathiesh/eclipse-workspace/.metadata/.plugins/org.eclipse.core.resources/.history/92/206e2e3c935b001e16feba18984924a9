@@ -1,0 +1,22 @@
+package Collection;
+
+import java.util.PriorityQueue;
+
+public class QueueExamples {
+
+	public static void main(String[] args) {
+		PriorityQueue<Integer>p=new PriorityQueue<Integer>();
+		
+		System.out.println(p);
+		System.out.println(p.peek());//retrieve the first data
+		System.out.println(p.poll());//retrieve the first data
+		System.out.println(p);
+		System.out.println(p.element());//retrieve the first data
+		System.out.println(p.remove());//retrieve the first data
+		
+		System.out.println(p);
+	
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package Array;
+
+import java.util.Scanner;
+
+public class PositionOfArray {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size");
+		int size=sc.nextInt();
+		int a[]=new int[size];
+		int b=sc.nextInt();
+		
+		System.out.println("enter the inputs");
+		for(int i=0;i<a.length;i++)
+		{
+		 a[i]=sc.nextInt();
+		 
+		}
+		System.out.println("output");
+		for(int i=0;i<a.length;i++) {
+			if(a[i]==b) //0=2//1==2//2==3
+			{
+				System.out.println(i);
+			
+			}
+		}
+		
+		
+
+	}
+
+}
+

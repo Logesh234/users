@@ -1,0 +1,23 @@
+package service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import dao.UserDao;
+import Model.User;
+
+public class UserService
+{
+	public void view() throws ClassNotFoundException, SQLException
+	{
+		List<User>userlist=new UserDao().viewUser();
+		for(User u:userlist)
+		{
+			System.out.println(u.getUserId());
+			System.out.println(u.getUserName());
+			System.out.println(u.getCity());
+			System.out.println(u.getState());
+		}
+	}
+
+}

@@ -1,0 +1,43 @@
+package MiniProject1;
+
+import java.util.Scanner;
+class EmailInfo{
+	
+	EmailInfo() {
+		System.out.println("====================================================================");
+		System.out.println("======================== Email info=============================");
+		System.out.println("====================================================================");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your First name :");
+		String fname=sc.next();
+		System.out.println("====================================================================");
+		System.out.println("Enter your last name :");
+		String lname=sc.next();
+		String mail="";
+		String domain="com";
+		String password="";
+		int passLength=8;
+		//password
+		String passSet="ABCDEFGHIJKLMNOPQRSTUVWYZ0123456789!@#$%";
+		char[] pass = new char[passLength];
+		for (int i=0;i<passLength;i++) {
+			int rand=(int) (Math.random() * passSet.length());
+			pass[i]=passSet.charAt(rand);	
+		}
+		password=new String(pass);
+		 
+		System.out.println("enter your choice for mail\n1.gmail\n2.yahoo\n3.outlook\n4.aol");
+		int choice=sc.nextInt();
+		switch(choice) {
+		case 1:mail="gmail";break;
+		case 2:mail="yahoo";break;
+		case 3:mail="outlook";break;
+		case 4:mail="aol";break;
+		}
+		System.out.println("Thank you");
+		//email name
+		String emailName =fname.toLowerCase()+lname.toLowerCase()+"@"+mail +"."+ domain;
+		System.out.println("name:"+fname+lname+"\n"+
+		"email :"+emailName+"\npassword :"+password);
+	}
+}

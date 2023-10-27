@@ -1,0 +1,52 @@
+package MiniProject1;
+
+public class Admin {
+	private int AddBook;
+	private int ViewBook;
+	private int ViewIssuedBook;
+	
+	public Admin() {
+		super();
+	}
+
+	public Admin(int addBook, int viewBook, int viewIssuedBook) {
+		super();
+		AddBook = addBook;
+		ViewBook = viewBook;
+		ViewIssuedBook = viewIssuedBook;
+	}
+
+	public int getAddBook() {
+		return AddBook;
+	}
+
+	public void setAddBook(int addBook) {
+		AddBook = addBook;
+	}
+
+	public int getViewBook() {
+		return ViewBook;
+	}
+
+	public void setViewBook(int viewBook) {
+		ViewBook = viewBook;
+	}
+
+	public int getViewIssuedBook() {
+		return ViewIssuedBook;
+	}
+
+	public void setViewIssuedBook(int viewIssuedBook) {
+		ViewIssuedBook = viewIssuedBook;
+	}
+
+	@Override
+	public String toString() {
+		return "Admin [AddBook=" + AddBook + ", ViewBook=" + ViewBook + ", ViewIssuedBook=" + ViewIssuedBook
+				+ ", getAddBook()=" + getAddBook() + ", getViewBook()=" + getViewBook() + ", getViewIssuedBook()="
+				+ getViewIssuedBook() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+	
+
+}
